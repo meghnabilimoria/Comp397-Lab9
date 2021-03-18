@@ -7,7 +7,7 @@ public class PlayerBehaviour : MonoBehaviour
     public CharacterController controller;
 
     [Header("Controls")] 
-    public Joystick joyStick;
+    public Joystick joystick;
     public float horizontalSensitivity;
     public float verticalSensitivity;
 
@@ -60,8 +60,8 @@ public class PlayerBehaviour : MonoBehaviour
         //x = Input.GetAxis("Horizontal");
         //z = Input.GetAxis("Vertical");
 
-        float x = joyStick.Horizontal;
-        float z = joyStick.Vertical;
+        float x = joystick.Horizontal;
+        float z = joystick.Vertical;
 
         Vector3 move = transform.right * x + transform.forward * z;
 
